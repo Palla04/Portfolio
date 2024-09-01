@@ -66,9 +66,9 @@ section{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
-    position: fixed; /* Changed to absolute to position it correctly */
-    top: 2rem; /* Adjust this value as needed */
-    right: 3rem; /* Adjust this value as needed */
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
     cursor: pointer;
     z-index: 1100;
 }
