@@ -8,6 +8,18 @@ manuIcon.addEventListener('click',function(e){
     navbar.classList.toggle('active')
 })
 // Links
+
+let amazon = document.querySelector('#go-amazon');
+amazon.addEventListener('click',function(e){
+    e.preventDefault();
+    window.open('https://palla04.github.io/Amazon-Clone/', '_blank');
+});
+
+let login = document.querySelector('#go-login')
+login.addEventListener('click',function(e){
+    e.preventDefault();
+    window.open('https://palla04.github.io/Login-and-Registration-Page/', '_blank');
+});
 let linkedin = document.querySelector('.linkedin');
 linkedin.addEventListener('click', function(e) {
     e.preventDefault(); // Prevent default action
@@ -20,6 +32,23 @@ github.addEventListener('click', function(e) {
     window.open('https://github.com/Palla04', '_blank'); // Open GitHub link in a new tab
 });
 
+// Mail Send
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent the form from submitting normally
+
+    var params = {
+      from_name: document.getElementById('fullName').value,
+      email_id: document.getElementById('email_id').value,
+      message: document.getElementById('message').value,
+      subject: document.getElementById('subject').value,
+      ph_no: document.getElementById('ph_no').value
+    };
+
+    emailjs.send('service_k3q9m8y', 'template_qe2fujs', params).then(
+      function () {
+        alert('Success! Your message has been sent.');
+      });
+  });
 
 // scroll setup and navbar highlight
 let section = document.querySelectorAll('section')
