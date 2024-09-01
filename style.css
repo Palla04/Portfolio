@@ -18,10 +18,13 @@
 
 html{
     font-size: 62.5%;
+    width: 100%;
     overflow-x: hidden;
 }
 
 body{
+    width: 100%;
+    overflow-x: hidden;
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -66,11 +69,6 @@ section{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
-    position: fixed;
-    top: 2rem;
-    right: 3rem;
-    cursor: pointer;
-    z-index: 1100;
 }
 
 
@@ -359,6 +357,12 @@ span{
 @media(max-width: 768px) {
     #menu-icon{
         display: block;
+        position: absolute; /* Position menu icon absolutely */
+        right: 3%; /* Align it to the right with padding */
+        top: 2rem;
+    }
+    .header {
+        padding: 2rem 3%;
     }
 
     .navbar{
@@ -368,8 +372,8 @@ span{
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
         z-index: 1000;
     }
