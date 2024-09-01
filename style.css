@@ -66,6 +66,11 @@ section{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+    position: absolute; /* Changed to absolute to position it correctly */
+    top: 2rem; /* Adjust this value as needed */
+    right: 3%; /* Adjust this value as needed */
+    cursor: pointer;
+    z-index: 1100;
 }
 
 
@@ -366,7 +371,7 @@ span{
         border-top: .1rem solid rgba(0,0,0,.2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         display: none;
-
+        z-index: 1000;
     }
 
     .navbar.active{
