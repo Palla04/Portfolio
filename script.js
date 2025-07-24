@@ -47,7 +47,13 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     emailjs.send('service_k3q9m8y', 'template_qe2fujs', params).then(
       function () {
         alert('Success! Your message has been sent.');
-      });
+        document.getElementById('contact-form').reset();
+      }),
+      function (error) {
+      alert('Failed to send message. Please try again.');
+      console.error(error);
+    }
+
   });
 
 // scroll setup and navbar highlight
