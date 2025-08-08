@@ -117,7 +117,7 @@ span{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .social-media a{
@@ -222,7 +222,7 @@ span{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
     gap: 2rem;
@@ -272,14 +272,17 @@ span{
 }
 .portfolio-layer h4{
     font-size: 2.5rem;
+    color: rgb(22, 57, 57);
 }
 .portfolio-layer p{
     font-size: 1.4rem;
+    color: var(--bg-color);
 }
 
 .portfolio-layer i{
     font-size: 2rem;
-    color: var(--text-color);
+    color: rgb(22, 57, 57);
+
 }
 
 /* Contact */

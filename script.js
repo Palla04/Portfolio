@@ -9,10 +9,16 @@ manuIcon.addEventListener('click',function(e){
 })
 // Links
 
-let amazon = document.querySelector('#go-amazon');
-amazon.addEventListener('click',function(e){
+let Grocery = document.querySelector('#go-freshcart');
+Grocery.addEventListener('click',function(e){
     e.preventDefault();
-    window.open('https://palla04.github.io/Amazon-Clone/', '_blank');
+    window.open('https://quickfreshcart.netlify.app/', '_blank');
+});
+
+let Todo = document.querySelector('#go-todo')
+Todo.addEventListener('click',function(e){
+    e.preventDefault();
+    window.open('https://daily-todoslist.netlify.app/', '_blank');
 });
 
 let login = document.querySelector('#go-login')
